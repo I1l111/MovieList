@@ -3,11 +3,18 @@ import PropTypes from "prop-types";
 
 import styles from "./styles.module.scss";
 
-const Button = ({ btnSize, btnType, btnText, onClickCallback }) => {
+const Button = ({
+  btnSize,
+  btnType,
+  btnText,
+  onClickCallback,
+  ...additionalProps
+}) => {
   return (
     <button
       className={`${styles.btnGeneralStyles} ${styles[btnSize]} ${styles[btnType]}`}
       onClick={onClickCallback}
+      {...additionalProps}
     >
       {btnText}
     </button>

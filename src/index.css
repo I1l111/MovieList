@@ -7,6 +7,7 @@ head,
 #root {
   margin: 0;
   height: 200vh;
+  background-color: var(--light-beige-100);
   font-family: "Optima", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
