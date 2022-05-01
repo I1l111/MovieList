@@ -26,7 +26,7 @@ const Job = ({ data, setKeywords }) => {
     const logoSvg = import(`${logo}`).then((d) => {
       setIcon(d.default);
     });
-    console.log(logoSvg)
+    console.log(logoSvg);
   };
 
   useEffect(() => {
